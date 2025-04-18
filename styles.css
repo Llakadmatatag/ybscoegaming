@@ -1,0 +1,177 @@
+:root {
+    --text-color: #ffffff; /* Keep only this needed variable */
+}
+
+/* Remove duplicate navbar styles (already defined inline) */
+.navbar 
+/* Remove unused join-btn styles */
+
+body, html {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, 
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.45) 20%,
+            rgba(0, 0, 0, 0.3) 40%,
+            rgba(0, 0, 0, 0.3) 100%
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('./assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    background: rgba(10, 25, 47, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-right: 2rem;
+}
+
+.logo a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Stick', sans-serif;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-family: 'Stick', sans-serif;
+    text-transform: uppercase;
+}
+
+
+@keyframes bloodFlow {  /* Keep if used elsewhere */
+    /* Only remove if not used by other elements */
+}
+
+.hero {
+    min-height: calc(100vh - 60px); /* Adjust to account for the navbar height */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+    padding: 0 8rem;
+    max-width: 800px;
+    text-align: left;
+}
+
+.glitch-text {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    animation: glitch 0.5s infinite;
+    text-shadow: 2px 2px var(--accent-color),
+                -2px -2px #ff0000;
+    text-align: left;
+}
+
+.tagline {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+.orbit-btn {
+    font-family: 'Eater', cursive;
+    background: #1a0000;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 1.2rem 3rem;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.orbit-btn:hover {
+    background: #2a0000;
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 20px rgba(255, 0, 0, 0.5),
+        inset 0 0 15px rgba(255, 0, 0, 0.5);
+    letter-spacing: 4px;
+}
+
+.orbit-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 0, 0, 0.3), transparent);
+    transform: translateX(-100%);
+    animation: bloodFlow 3s infinite;
+}
+
+/* Keep these animations as they're used in multiple elements */
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes bloodFlow {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(100%); }
+}
+
+.footer-logo a:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #ff0000);
+}
+
+/* Hapus properti yang tidak diperlukan */
+.custom-kick-icon {
+    /* Dipertahankan karena digunakan di footer */
+}
