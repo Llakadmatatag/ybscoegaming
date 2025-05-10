@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Leaderboard - YBSRewards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img src="images/ybs-logo.png" alt="YBSRewards Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <span class="nav-separator">|</span>
+                    <a href="leaderboard.html" class="active">Featured Leaderboard</a>
+                    <span class="nav-separator">|</span>
+                    <a href="social.html">Social Feed</a>
+                    <span class="nav-separator">|</span>
+                    <a href="stream.html">Live Stream</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>Featured <span>Leaderboard</span></h1>
+                <p>Check out our monthly wagering leaderboard and see who's on top!</p>
+            </div>
+
+            <!-- Leaderboard Section -->
+            <section id="leaderboard" class="section leaderboard-section">
+                <h2 class="section-title">$500 Monthly Leaderboard<br><span style="font-size: 0.9em;">Featured with 'ROOBET'</span></h2>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+                    <div style="margin-bottom: 10px;">
+                        <a href="https://roobet.com/?ref=ybscoegaming" target="_blank" class="cta-button"><i class="fas fa-trophy"></i> Join the Race</a>
+                    </div>
+                    <div style="background: linear-gradient(135deg, rgba(31, 31, 31, 0.9), rgba(229, 9, 20, 0.2)); padding: 15px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); border: 1px solid rgba(229, 9, 20, 0.5);">
+                        <p style="margin-bottom: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; color: #fff; font-size: 0.9rem;">Competition ends in</p>
+                        <div id="countdown-container" style="display: flex; justify-content: center; gap: 10px; text-align: center;">
+                            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 8px 12px; border-radius: 5px; min-width: 60px;">
+                                <span id="countdown-days" style="font-size: 1.5rem; font-weight: bold; color: #fff;">00</span>
+                                <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.7); text-transform: uppercase;">Days</div>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 8px 12px; border-radius: 5px; min-width: 60px;">
+                                <span id="countdown-hours" style="font-size: 1.5rem; font-weight: bold; color: #fff;">00</span>
+                                <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.7); text-transform: uppercase;">Hours</div>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 8px 12px; border-radius: 5px; min-width: 60px;">
+                                <span id="countdown-minutes" style="font-size: 1.5rem; font-weight: bold; color: #fff;">00</span>
+                                <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.7); text-transform: uppercase;">Mins</div>
+                            </div>
+                            <div style="background-color: rgba(0, 0, 0, 0.5); padding: 8px 12px; border-radius: 5px; min-width: 60px;">
+                                <span id="countdown-seconds" style="font-size: 1.5rem; font-weight: bold; color: #fff;">00</span>
+                                <div style="font-size: 0.7rem; color: rgba(255, 255, 255, 0.7); text-transform: uppercase;">Secs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podium for Top 3 -->
+                <div style="display: flex; justify-content: center; margin-bottom: 40px;">
+                    <div style="display: flex; align-items: flex-end; height: 220px;">
+                        <!-- 2nd Place -->
+                        <div style="display: flex; flex-direction: column; align-items: center; margin: 0 15px;">
+                            <div style="width: 80px; height: 80px; background-color: rgba(192, 192, 192, 0.2); border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 2px solid #C0C0C0; margin-bottom: 10px;">
+                                <span style="font-size: 2rem; color: #C0C0C0;">-</span>
+                            </div>
+                            <div style="text-align: center; margin-bottom: 10px;">
+                                <span style="font-weight: bold; color: #C0C0C0;">2nd</span><br>
+                                <span style="color: #C0C0C0; font-weight: bold;">$150</span>
+                            </div>
+                            <div style="width: 100px; height: 120px; background-color: #C0C0C0; border-radius: 5px 5px 0 0; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-medal" style="font-size: 2rem; color: #333;"></i>
+                            </div>
+                        </div>
+
+                        <!-- 1st Place -->
+                        <div style="display: flex; flex-direction: column; align-items: center; margin: 0 15px; z-index: 2;">
+                            <div style="width: 90px; height: 90px; background-color: rgba(255, 215, 0, 0.2); border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 2px solid #FFD700; margin-bottom: 10px;">
+                                <span style="font-size: 2.2rem; color: #FFD700;">-</span>
+                            </div>
+                            <div style="text-align: center; margin-bottom: 10px;">
+                                <span style="font-weight: bold; color: #FFD700;">1st</span><br>
+                                <span style="color: #FFD700; font-weight: bold;">$225</span>
+                            </div>
+                            <div style="width: 120px; height: 160px; background-color: #FFD700; border-radius: 5px 5px 0 0; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-trophy" style="font-size: 2.5rem; color: #333;"></i>
+                            </div>
+                        </div>
+
+                        <!-- 3rd Place -->
+                        <div style="display: flex; flex-direction: column; align-items: center; margin: 0 15px;">
+                            <div style="width: 70px; height: 70px; background-color: rgba(205, 127, 50, 0.2); border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 2px solid #CD7F32; margin-bottom: 10px;">
+                                <span style="font-size: 1.8rem; color: #CD7F32;">-</span>
+                            </div>
+                            <div style="text-align: center; margin-bottom: 10px;">
+                                <span style="font-weight: bold; color: #CD7F32;">3rd</span><br>
+                                <span style="color: #CD7F32; font-weight: bold;">$75</span>
+                            </div>
+                            <div style="width: 90px; height: 80px; background-color: #CD7F32; border-radius: 5px 5px 0 0; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-award" style="font-size: 1.8rem; color: #333;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leaderboard-container">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Username</th>
+                                <th>Wagered</th>
+                                <th>Prize</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>$25</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>$15</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>$10</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- How to climb the leaderboard -->
+            <section class="section rules-section">
+                <h2 class="section-title">How to climb the leaderboard</h2>
+                <div class="climb-container" style="display: flex; flex-direction: column; gap: 20px; max-width: 800px; margin: 0 auto;">
+                    <!-- Step 1 -->
+                    <div class="climb-step" style="display: flex; align-items: flex-start; background: linear-gradient(135deg, #1f1f1f, rgba(229, 9, 20, 0.1)); padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid rgba(229, 9, 20, 0.3); position: relative; overflow: hidden;">
+                        <div class="step-number" style="background-color: rgba(229, 9, 20, 0.8); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; font-weight: bold; margin-right: 20px; flex-shrink: 0;">1</div>
+                        <div class="step-content" style="flex: 1;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <i class="fas fa-user-plus" style="font-size: 1.4rem; color: #e50914; margin-right: 10px;"></i>
+                                Register on ROOBET
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: #ddd;">First, sign up using our exclusive link: <a href="https://roobet.com/?ref=ybscoegaming" style="color: #e50914; text-decoration: underline;">https://roobet.com/?ref=ybscoegaming</a>. This ensures you're properly tracked in our monthly competition.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="climb-step" style="display: flex; align-items: flex-start; background: linear-gradient(135deg, #1f1f1f, rgba(229, 9, 20, 0.1)); padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid rgba(229, 9, 20, 0.3); position: relative; overflow: hidden;">
+                        <div class="step-number" style="background-color: rgba(229, 9, 20, 0.8); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; font-weight: bold; margin-right: 20px; flex-shrink: 0;">2</div>
+                        <div class="step-content" style="flex: 1;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <i class="fas fa-coins" style="font-size: 1.4rem; color: #e50914; margin-right: 10px;"></i>
+                                Maximize Your Wagers
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: #ddd;">Wager as much as possible to climb to the top! The more you play, the higher you'll rank. Focus on games you enjoy and watch your position rise with every bet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="climb-step" style="display: flex; align-items: flex-start; background: linear-gradient(135deg, #1f1f1f, rgba(229, 9, 20, 0.1)); padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid rgba(229, 9, 20, 0.3); position: relative; overflow: hidden;">
+                        <div class="step-number" style="background-color: rgba(229, 9, 20, 0.8); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; font-weight: bold; margin-right: 20px; flex-shrink: 0;">3</div>
+                        <div class="step-content" style="flex: 1;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <i class="fas fa-shield-alt" style="font-size: 1.4rem; color: #e50914; margin-right: 10px;"></i>
+                                Maintain Your Position
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: #ddd;">Once you've reached a top position, keep playing to defend your rank! Check the leaderboard regularly and stay ahead of the competition until the end of the month.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="climb-step" style="display: flex; align-items: flex-start; background: linear-gradient(135deg, #1f1f1f, rgba(229, 9, 20, 0.1)); padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid rgba(229, 9, 20, 0.3); position: relative; overflow: hidden;">
+                        <div class="step-number" style="background-color: rgba(229, 9, 20, 0.8); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.4rem; font-weight: bold; margin-right: 20px; flex-shrink: 0;">4</div>
+                        <div class="step-content" style="flex: 1;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: 15px; color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <i class="fas fa-trophy" style="font-size: 1.4rem; color: #e50914; margin-right: 10px;"></i>
+                                Claim Your Victory
+                            </h3>
+                            <p style="font-size: 1rem; line-height: 1.6; color: #ddd;">Congratulations! If you've maintained a top position, you win! Top 6 players receive cash prizes with the #1 position earning $225. Winners are announced at the start of each month.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/ybs-logo.png" alt="YBSRewards Logo" class="footer-logo-image">
+                    <h2>YBS<span>Rewards</span></h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <a href="index.html">Home</a>
+                        <a href="leaderboard.html">Featured Leaderboard</a>
+                        <a href="social.html">Social Feed</a>
+                        <a href="stream.html">Live Stream</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Social Media</h3>
+                        <a href="https://kick.com/YBSCOEGAMING" target="_blank"><i class="fas fa-play"></i> Kick</a>
+                        <a href="https://www.youtube.com/@Ybscoegaming" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="http://x.com/ybscoegaming" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://www.instagram.com/ybscoegaming/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://discord.gg/UxQVzgYJ" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Credit</h3>
+                        <a href="https://x.com/Llakadmatatag" target="_blank" class="footer-credit">Designed by: @Llakadmatatag</a>
+                        <a href="https://code.visualstudio.com/" target="_blank" class="footer-credit">Powered by VSCode</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YBSRewards. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cookie-consent.js"></script>
+    <script>
+        // Countdown Timer for May 31, 2025
+        function updateCountdown() {
+            const endDate = new Date("May 31, 2025 23:59:59").getTime();
+            const now = new Date().getTime();
+            const timeLeft = endDate - now;
+
+            // Calculate days, hours, minutes, seconds
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            // Format numbers to always have two digits
+            const formatNumber = (num) => {
+                return num < 10 ? "0" + num : num;
+            };
+
+            // Display the countdown in separate elements
+            document.getElementById("countdown-days").textContent = formatNumber(days);
+            document.getElementById("countdown-hours").textContent = formatNumber(hours);
+            document.getElementById("countdown-minutes").textContent = formatNumber(minutes);
+            document.getElementById("countdown-seconds").textContent = formatNumber(seconds);
+
+            // Update every second
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Start the countdown when page loads
+        document.addEventListener('DOMContentLoaded', updateCountdown);
+    </script>
+</body>
+</html>

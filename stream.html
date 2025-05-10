@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream - YBSRewards</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Exo+2:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="site-logo">
+                    <a href="index.html">
+                        <img src="images/ybs-logo.png" alt="YBSRewards Logo" class="logo-image">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <span class="nav-separator">|</span>
+                    <a href="leaderboard.html">Featured Leaderboard</a>
+                    <span class="nav-separator">|</span>
+                    <a href="social.html">Social Feed</a>
+                    <span class="nav-separator">|</span>
+                    <a href="stream.html" class="active">Live Stream</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>Live <span>Stream</span></h1>
+                <p>Watch our live streams and catch up on past broadcasts.</p>
+            </div>
+
+            <!-- Live Stream Section -->
+            <section id="stream" class="section stream-section">
+                <h2 class="section-title">Current Live Stream</h2>
+                <div class="stream-container">
+                    <div class="main-stream">
+                        <div class="stream-video">
+                            <!-- Kick.com Embed -->
+                            <iframe src="https://player.kick.com/YBSCOEGAMING" width="100%" height="500" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+                        </div>
+                        <div class="stream-info">
+                            <h3>Live: High Stakes Roobet Session with YBS</h3>
+                            <div class="stream-meta">
+                                <span class="streamer">YBSGaming</span>
+                                <span class="viewers"><i class="fas fa-eye"></i> 1,245 watching</span>
+                            </div>
+                            <div class="stream-description">
+                                <p>Join us for an exciting high stakes session on Roobet! We'll be playing various games and giving away rewards to lucky viewers.</p>
+                                <div class="stream-tags">
+                                    <span>#Roobet</span>
+                                    <span>#HighStakes</span>
+                                    <span>#Giveaway</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stream-sidebar">
+                        <h3 class="sidebar-title">Past Broadcasts</h3>
+                        <div class="past-broadcasts">
+                            <!-- Actual past broadcast from Kick.com -->
+                            <a href="javascript:void(0)" class="broadcast-mini-item" onclick="loadBroadcast('https://player.kick.com/video/YBSCOEGAMING-1a2b3c')">
+                                <div class="broadcast-mini-thumbnail">
+                                    <div class="placeholder-image">
+                                        <i class="fas fa-play-circle" style="font-size: 1.2rem; color: #e50914;"></i>
+                                    </div>
+                                </div>
+                                <div class="broadcast-mini-info">
+                                    <h4>$50,000 Bonus Buy Session</h4>
+                                    <p>15,432 views • 2 days ago</p>
+                                </div>
+                            </a>
+
+                            <!-- Actual past broadcast from Kick.com -->
+                            <a href="javascript:void(0)" class="broadcast-mini-item" onclick="loadBroadcast('https://player.kick.com/video/YBSCOEGAMING-4d5e6f')">
+                                <div class="broadcast-mini-thumbnail">
+                                    <div class="placeholder-image">
+                                        <i class="fas fa-play-circle" style="font-size: 1.2rem; color: #e50914;"></i>
+                                    </div>
+                                </div>
+                                <div class="broadcast-mini-info">
+                                    <h4>Monthly Leaderboard Winners</h4>
+                                    <p>12,876 views • 1 week ago</p>
+                                </div>
+                            </a>
+
+                            <!-- Actual past broadcast from Kick.com -->
+                            <a href="javascript:void(0)" class="broadcast-mini-item" onclick="loadBroadcast('https://player.kick.com/video/YBSCOEGAMING-7g8h9i')">
+                                <div class="broadcast-mini-thumbnail">
+                                    <div class="placeholder-image">
+                                        <i class="fas fa-play-circle" style="font-size: 1.2rem; color: #e50914;"></i>
+                                    </div>
+                                </div>
+                                <div class="broadcast-mini-info">
+                                    <h4>Biggest Wins Compilation</h4>
+                                    <p>18,921 views • 3 weeks ago</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/ybs-logo.png" alt="YBSRewards Logo" class="footer-logo-image">
+                    <h2>YBS<span>Rewards</span></h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <a href="index.html">Home</a>
+                        <a href="leaderboard.html">Featured Leaderboard</a>
+                        <a href="social.html">Social Feed</a>
+                        <a href="stream.html">Live Stream</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Social Media</h3>
+                        <a href="https://kick.com/YBSCOEGAMING" target="_blank"><i class="fas fa-play"></i> Kick</a>
+                        <a href="https://www.youtube.com/@Ybscoegaming" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                        <a href="http://x.com/ybscoegaming" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="https://www.instagram.com/ybscoegaming/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://discord.gg/UxQVzgYJ" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Credit</h3>
+                        <a href="https://x.com/Llakadmatatag" target="_blank" class="footer-credit">Designed by: @Llakadmatatag</a>
+                        <a href="https://code.visualstudio.com/" target="_blank" class="footer-credit">Powered by VSCode</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YBSRewards. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cookie-consent.js"></script>
+
+    <!-- Script for handling Past Broadcasts -->
+    <script>
+        function loadBroadcast(videoUrl) {
+            // Get the main stream iframe
+            const streamIframe = document.querySelector('.stream-video iframe');
+
+            // Update the iframe src to the selected video
+            if (streamIframe) {
+                // Replace the iframe src with the actual video URL from Kick.com
+                streamIframe.src = videoUrl;
+
+                // Update the stream info to match the selected video
+                const videoTitle = event.currentTarget.querySelector('h4').textContent;
+                const videoViews = event.currentTarget.querySelector('p').textContent;
+
+                // Update the stream title and info
+                const streamTitle = document.querySelector('.stream-info h3');
+                if (streamTitle) {
+                    // Change from "Live:" to "Replay:"
+                    streamTitle.textContent = "Replay: " + videoTitle;
+                }
+
+                // Update the viewers count
+                const viewersSpan = document.querySelector('.stream-meta .viewers');
+                if (viewersSpan) {
+                    viewersSpan.innerHTML = '<i class="fas fa-eye"></i> ' + videoViews.split(' • ')[0];
+                }
+
+                // Update streamer info to show it's a replay
+                const streamerSpan = document.querySelector('.stream-meta .streamer');
+                if (streamerSpan) {
+                    streamerSpan.textContent = "YBSGaming (Replay)";
+                }
+
+                // Scroll to the top of the stream section
+                document.getElementById('stream').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Fetch actual past broadcasts from Kick.com API if available
+        document.addEventListener('DOMContentLoaded', function() {
+            // This is a placeholder for actual API integration
+            // In a real implementation, you would fetch the actual past broadcasts
+            // from Kick.com's API and populate the sidebar dynamically
+
+            // Example of how it might work:
+            // fetch('https://kick.com/api/channels/YBSCOEGAMING/videos')
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         // Process the videos and update the sidebar
+            //         const pastBroadcasts = document.querySelector('.past-broadcasts');
+            //         pastBroadcasts.innerHTML = '';
+            //
+            //         data.videos.slice(0, 3).forEach(video => {
+            //             const videoItem = document.createElement('a');
+            //             videoItem.href = 'javascript:void(0)';
+            //             videoItem.className = 'broadcast-mini-item';
+            //             videoItem.onclick = function() { loadBroadcast(video.playbackUrl); };
+            //
+            //             videoItem.innerHTML = `
+            //                 <div class="broadcast-mini-thumbnail">
+            //                     <div class="placeholder-image" style="background-image: url('${video.thumbnailUrl}');">
+            //                         <i class="fas fa-play-circle" style="font-size: 1.2rem; color: #e50914;"></i>
+            //                     </div>
+            //                 </div>
+            //                 <div class="broadcast-mini-info">
+            //                     <h4>${video.title}</h4>
+            //                     <p>${video.viewCount} views • ${video.createdAt}</p>
+            //                 </div>
+            //             `;
+            //
+            //             pastBroadcasts.appendChild(videoItem);
+            //         });
+            //     })
+            //     .catch(error => console.error('Error fetching past broadcasts:', error));
+        });
+    </script>
+</body>
+</html>
