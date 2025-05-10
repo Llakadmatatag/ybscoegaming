@@ -23,9 +23,19 @@ function initMiniSocialFeeds() {
     // Set YouTube thumbnail - using a real YBSCoegaming video thumbnail
     const videoThumb = document.querySelector('.video-thumb');
     if (videoThumb) {
-        // Using a sample YouTube thumbnail from the channel
-        videoThumb.style.backgroundImage = "url('https://i.ytimg.com/vi/sample-video-id/mqdefault.jpg')";
-        // Note: Replace 'sample-video-id' with an actual video ID from the YBSCoegaming channel
+        // Using a real YouTube thumbnail from the Ybscoegaming channel
+        videoThumb.style.backgroundImage = "url('https://i.ytimg.com/vi/Wd-CgP5wMxQ/maxresdefault.jpg')";
+
+        // Add error handling for the thumbnail
+        const img = new Image();
+        img.onload = function() {
+            // Image loaded successfully, do nothing
+        };
+        img.onerror = function() {
+            // If maxresdefault fails, try hqdefault
+            videoThumb.style.backgroundImage = "url('https://i.ytimg.com/vi/Wd-CgP5wMxQ/hqdefault.jpg')";
+        };
+        img.src = 'https://i.ytimg.com/vi/Wd-CgP5wMxQ/maxresdefault.jpg';
     }
 
     // Set Instagram thumbnails

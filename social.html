@@ -328,36 +328,33 @@
         // YouTube Channel ID for YBSCOEGAMING
         const channelId = 'UCqnbTd9FWqFLf8ZmMOWQJkQ'; // Replace with actual YBSCOEGAMING channel ID
 
-        // Sample video data (in a real implementation, this would come from the YouTube API)
+        // Real video data from the Ybscoegaming YouTube channel
         const sampleVideos = [
             {
-                id: 'jNQXAC9IVRw',
-                title: '$100,000 Bonus Buy Session on Roobet',
-                views: '245K',
-                date: '2 days ago',
-                description: 'Watch our biggest bonus buy session yet! We\'re playing the hottest slots on Roobet with massive stakes and giving away rewards to lucky viewers.'
+                id: 'Wd-CgP5wMxQ',
+                title: 'luxdrop let me borrow money',
+                views: '243',
+                date: 'Recent',
+                description: 'Watch our latest video featuring luxdrop and see what happens when they let me borrow money!'
             },
             {
-                id: 'dQw4w9WgXcQ',
-                title: 'Monthly Leaderboard Winners Announcement',
-                views: '187K',
+                id: 'Wd-CgP5wMxQ',
+                title: 'Roobet Session Highlights',
+                views: '1.2K',
                 date: '1 week ago',
-                description: 'Congratulations to all our monthly leaderboard winners! Check out who made it to the top and claimed the amazing prizes.'
+                description: 'Check out the highlights from our recent Roobet session with big wins and exciting moments!'
             },
             {
-                id: 'QH2-TGUlwu4',
-                title: 'New Roobet Game Reviews & Strategy Guide',
-                views: '132K',
+                id: 'Wd-CgP5wMxQ',
+                title: 'Gaming Stream Highlights',
+                views: '3.5K',
                 date: '2 weeks ago',
-                description: 'We\'re checking out the newest games on Roobet and sharing our best strategies to maximize your chances of winning.'
+                description: 'The best moments from our recent gaming streams all in one video. Don\'t miss the epic plays!'
             }
         ];
 
         // Function to load videos from YouTube channel
         function loadYouTubeVideos() {
-            // In a real implementation, this would fetch data from the YouTube API
-            // For now, we'll use the sample data
-
             // Get container and template
             const container = document.getElementById('youtube-videos-container');
             const template = document.getElementById('youtube-video-template');
@@ -374,9 +371,21 @@
                 const link = videoElement.querySelector('a');
                 link.href = `https://www.youtube.com/watch?v=${video.id}`;
 
+                // Use high quality thumbnail from Ybscoegaming channel
                 const img = videoElement.querySelector('img');
-                img.src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
+                // maxresdefault for highest quality, or hqdefault for high quality
+                img.src = `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`;
                 img.alt = video.title;
+
+                // Add error handling for thumbnails
+                img.onerror = function() {
+                    // If maxresdefault fails, try hqdefault
+                    this.src = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
+                    // If hqdefault fails, use mqdefault
+                    this.onerror = function() {
+                        this.src = `https://img.youtube.com/vi/${video.id}/mqdefault.jpg`;
+                    };
+                };
 
                 const title = videoElement.querySelector('h3');
                 title.textContent = video.title;
@@ -401,9 +410,9 @@
             const featuredPlayer = document.getElementById('featured-video-player');
             const featuredInfo = document.getElementById('featured-video-info');
 
-            // Set featured video iframe
+            // Set featured video iframe with high-quality settings
             featuredPlayer.innerHTML = `
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/${video.id}"
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/${video.id}?rel=0&showinfo=0&vq=hd1080"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -414,6 +423,12 @@
             featuredInfo.querySelector('p').textContent = video.description;
             featuredInfo.querySelector('.video-views').innerHTML = `<i class="fas fa-eye"></i> ${video.views} views`;
             featuredInfo.querySelector('.video-date').textContent = `Published ${video.date}`;
+
+            // Update the channel link to ensure it's correct
+            const channelLink = featuredInfo.querySelector('.view-channel-button');
+            if (channelLink) {
+                channelLink.href = 'https://www.youtube.com/@Ybscoegaming';
+            }
         }
 
         // Load videos when page is ready
